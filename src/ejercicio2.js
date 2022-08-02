@@ -13,6 +13,18 @@
 
 document.getElementById("probandoTabla").addEventListener("click", agregarFila);*/
 
+//FORMA MAS CORRECTA
+
+/*let newRow = document.createElement("tr");
+let newColumn;
+for(i=0;i<=4; i++){
+    newColumn = document.createElement("td");
+    newRow.appendChild(newColumn);
+}
+*/
+
+
+
 function añadirFilas() {
     let table = document.getElementById("probandoTabla");
     let row = table.insertRow(0);
@@ -25,4 +37,3 @@ function añadirFilas() {
     cell3.innerHTML = "3";
     cell4.innerHTML = "4";
   }
-
